@@ -31,7 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 const PORT = process.env.PORT || 5000;
 
 // static files
-if (process.env.NODE_ENV === 'production') {
+if (isProduction) {
   // production
   app.use(express.static(path.join(__dirname, 'build')));
   app.use(favicon(path.join(__dirname, '/build/favicon.ico')));
