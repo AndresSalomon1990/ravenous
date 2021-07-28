@@ -1,0 +1,5 @@
+<Business /> -> presentational card of each business
+<BusinessList /> -> container of Business
+<SearchBar /> update the App state when the user click Let's Go
+<App /> container that render SearchBar & BusinessList
+
